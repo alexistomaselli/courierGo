@@ -7,32 +7,32 @@
       "DOM.Iterable",
       "ESNext"
     ],
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": [
-      "node",
-      "vite/client"
-    ],
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "types": [
+      "node",
+      "vite/client"
+    ]
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "**/*.d.ts",
     "vite.config.ts"
   ],
   "exclude": [
